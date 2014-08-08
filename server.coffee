@@ -1,13 +1,13 @@
 americano = require 'americano'
 
-application = module.exports = (callback) ->
+application = module.exports.start = (root, port, callback) ->
     options =
         name: 'tasky'
-        root: __dirname
-        port: process.env.PORT || 9250
-        host: process.env.HOST || '127.0.0.1'
+        root: root || __dirname
+        port: port || process.env.PORT
+        host: process.env.HOST || '0.0.0.0'
 
-    americano.start options
+    americano.start options, callback
 
 if not module.parent
     application()

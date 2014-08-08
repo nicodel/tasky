@@ -3,15 +3,15 @@ var americano, application;
 
 americano = require('americano');
 
-application = module.exports = function(callback) {
+application = module.exports.start = function(root, port, callback) {
   var options;
   options = {
     name: 'tasky',
-    root: __dirname,
-    port: process.env.PORT || 9250,
-    host: process.env.HOST || '127.0.0.1'
+    root: root || __dirname,
+    port: port || process.env.PORT,
+    host: process.env.HOST || '0.0.0.0'
   };
-  return americano.start(options);
+  return americano.start(options, callback);
 };
 
 if (!module.parent) {
