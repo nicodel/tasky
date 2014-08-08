@@ -1,10 +1,11 @@
 {
-  "name": "tasky",
+  "name": "cozy-tasky",
+  "displayName": "Tasky",
   "version": "1.1.1",
   "engines": [
-    "node = 0.8.x"
+    "node = 0.10.x"
   ],
-  "description": "A reboot of cozy-todos",
+  "description": "Simple and reactive task manager based on tagging.",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,17 +1,25 @@
 # Description
 
-Cozy Template is a template project to start quickly your own application. Just
-fork it and code while focusing only on your features !
+Tasky is a simple task manager based on tagging. The interface is very reactive
+and straightforward. Tagging makes task filtering super easy. Tasky can be
+installed on your own server or on your desktop. You decide the way you want to
+use it!
 
-Do you feel lost? No problem, check out our tutorial to get your started: http://cozy.io/hack/getting-started/
+# Install
+
+    npm install cozy-tasky -g
 
 # Run
+
+    tasky
+
+# Hack
 
 Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
 
     npm install -g coffee-script
-    git clone git://github.com/mycozycloud/cozy-template.git
+    git clone git://github.com/cozy-labs/cozy-tasky.git
     cd cozy-template
     npm install
     coffee server
