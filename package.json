@@ -10,7 +10,10 @@
     "type": "git",
     "url": "https://github.com/jsilvestre/tasky.git"
   },
-  "main": "server.coffee",
+  "bin": {
+    "tasky": "bin/tasky"
+  },
+  "main": "build/server.js",
   "dependencies": {
     "americano": "0.3.9",
     "americano-cozy-pouchdb": "0.3.5",
