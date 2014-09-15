@@ -12,7 +12,9 @@ application = module.exports.start = function(options, callback) {
   options.port = options.port || process.env.PORT;
   options.host = process.env.HOST || '0.0.0.0';
   return americano.start(options, function(app, server) {
-    return callback();
+    if (callback != null) {
+      return callback();
+    }
   });
 };
 
