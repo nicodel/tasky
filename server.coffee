@@ -8,7 +8,7 @@ application = module.exports.start = (options, callback) ->
     options.host = process.env.HOST || '0.0.0.0'
 
     americano.start options, (app, server) ->
-        callback()
+        callback() if callback?
 
 if not module.parent
     application()
