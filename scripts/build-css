@@ -1,0 +1,8 @@
+#!/bin/bash
+node_modules/.bin/stylus \
+    --include-css \
+    --sourcemap \
+    --sourcemap-inline \
+    --use ./node_modules/nib/lib/nib \
+    client/src/styles/application.styl \
+    -o build/client/public/styles

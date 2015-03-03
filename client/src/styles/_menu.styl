@@ -1,0 +1,105 @@
+#menu
+  width 20%
+  float left
+  background #F2F2F2
+  height 100%
+  position fixed
+  overflow auto
+
+  .fa-arrow-left
+    display none
+
+  ul
+    margin 0
+    padding 0
+    list-style-type none
+
+      a
+        margin-bottom -5.1px // dirty hack because of overflow blank space...
+
+    &.tags
+      margin-bottom 20px
+
+    li
+      display block
+      font-family regular
+      font-weight normal
+      position relative
+
+      a
+        display inline-block
+        width 100%
+        height 100%
+
+        margin-bottom -5px // dirty hack because of overflow blank space...
+
+        &:hover
+          background #FFC47F
+
+        // remove inherit styles
+        text-decoration none
+        color #555
+        padding 10px
+
+        text-overflow ellipsis
+        white-space nowrap
+        overflow hidden
+
+        i.fa-tag
+          color #333
+          margin-right 5px
+          display inline-block
+          opacity 0.2
+
+        i.fa-star-o
+        i.fa-star
+          color #333
+          display none
+          position absolute
+          right 10px
+          font-size 19px
+
+        &:hover:not(.favorite)
+          i.fa-star-o
+          i.fa-star
+            display inline-block
+            opacity 0.5
+
+        &.favorite
+          i.fa-star-o
+          i.fa-star
+            display inline-block
+            color #bbbb00
+
+      .submenu > li a
+        padding-left 25px
+
+      .sorts
+        position absolute
+        top 0
+        right 0
+        li
+          float right
+          opacity 0.5
+          a
+            height 39px
+
+          &.selected-sort
+            opacity 1
+
+      &.first-level > a
+        opacity 0.4
+
+      &.selected > a
+        background #aedbff
+      &.active > a i.fa-tag
+        opacity 0.8
+      &.active.first-level > a
+        opacity 1
+
+      &.magic a
+        color blue - 30%
+
+
+
+
