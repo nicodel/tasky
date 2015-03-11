@@ -1,6 +1,5 @@
 # Description
 
-<<<<<<< HEAD
 Tasky is a simple task manager based on tagging. The interface is very reactive
 and straightforward. Tagging makes task filtering super easy. Tasky can be
 installed on your own server or on your desktop. You decide the way you want to
@@ -9,15 +8,6 @@ use it!
 # Install
 
     npm install cozy-tasky -g
-=======
-Tasky is a simple yet powerful task manager. I found the usual tree structure to organize tasks far too rigid, so I came up with the idea that you can build your own tree on the fly with tags.
-
->>>>>>> ca62a32defab54c361f888faefcf9e556c718593
-
-# Development
-
-<<<<<<< HEAD
-    tasky
 
 # Hack
 
@@ -26,13 +16,7 @@ and Coffee-script)
 
     npm install -g coffee-script
     git clone git://github.com/cozy-labs/cozy-tasky.git
-    cd cozy-template
-=======
-Clone this repository, install dependencies and run server (it requires Node.js)
-
-    git clone git://github.com/jsilvestre/tasky.git
     cd tasky
->>>>>>> ca62a32defab54c361f888faefcf9e556c718593
     npm install
     npm run dev # starts everything you need
 
@@ -49,7 +33,7 @@ Windows users, the build system assume that you can run the following UNIX comma
 If you have any trouble finding a solution, let me know you are intested, so we can look into it together.
 
 # Contributing
-Let me know what you would like to see in the application so we can discuss it. The simplest way to do it is [opening an issue](https://github.com/jsilvestre/tasky/issues/new).
+Let me know what you would like to see in the application so we can discuss it. The simplest way to do it is [opening an issue](https://github.com/cozy-labs/tasky/issues/new).
 
 Make sure there is not already an issue discussing the feature or the bug you are about to post about!
 
